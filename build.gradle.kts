@@ -32,6 +32,12 @@ tasks.withType<KotlinCompile> {
 	}
 }
 
+tasks.register("smallTest", Test::class.java) {
+	useJUnitPlatform {
+		includeTags("small")
+	}
+}
+
 tasks.withType<Test> {
 	useJUnitPlatform()
 }
