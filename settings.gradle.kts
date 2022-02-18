@@ -8,3 +8,5 @@ pluginManagement {
 rootProject.name = "demo"
 include("demo-rpc")
 include("demo-springboot")
+include("demo-common")
+include("demo-client-graphql")
