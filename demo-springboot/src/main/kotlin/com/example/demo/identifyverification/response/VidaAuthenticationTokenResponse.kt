@@ -16,3 +16,5 @@ data class VidaAuthenticationTokenResponse(
   @JsonProperty("token_type")
   val tokenType: String
 )
+
+
