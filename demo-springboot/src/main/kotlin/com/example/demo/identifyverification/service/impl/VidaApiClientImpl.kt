@@ -6,12 +6,15 @@ import com.example.demo.identifyverification.service.VidaApiClient
 import com.example.demo.retrofit.httpclient.VidaVerificationServiceHttpClient
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import okhttp3.ResponseBody
+import org.springframework.beans.factory.annotation.Qualifier
 import org.springframework.stereotype.Service
 import retrofit2.Call
 
 @Service
 class VidaApiClientImpl(
   private val vidaVerificationServiceHttpClient: VidaVerificationServiceHttpClient,
+  @Qualifier("testBeanTestBean")
+  private val testBeans: String
 ) : VidaApiClient {
   override fun verifyMotherName(
     trxId: String,

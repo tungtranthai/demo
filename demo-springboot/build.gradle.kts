@@ -23,7 +23,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
     implementation ("com.github.ben-manes.caffeine:caffeine:3.0.3")
-
+    implementation ("org.jooq:jooq-codegen-maven:3.15.1")
     // Spring Cloud
     implementation("org.springframework.cloud:spring-cloud-starter-sleuth:3.0.3")
     // Tracing
