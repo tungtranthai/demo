@@ -97,4 +97,16 @@ class RetrofitConfiguration {
     builder.modules(KotlinModule())
     return builder.createXmlMapper(false).build()
   }
+
+  @Bean
+  @Qualifier("testBeanTestBean")
+  fun testBeanqualifier(): String {
+    return "test bean qualifier"
+  }
+
+  @Bean()
+  @Qualifier("testBean2")
+  fun testBean(): String {
+    return "test bean 2"
+  }
 }

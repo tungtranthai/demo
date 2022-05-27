@@ -18,7 +18,7 @@ import javax.annotation.PostConstruct
 
 class VidaAuthInterceptor(
   private val vidaApiKeyServiceHttpClient: VidaApiKeyServiceHttpClient,
-  val vidaJacksonObjectMapper: ObjectMapper
+  private val vidaJacksonObjectMapper: ObjectMapper
 ) : Interceptor {
   companion object {
     private val LOGGER = LoggerFactory.getLogger(VidaAuthInterceptor::class.java)
