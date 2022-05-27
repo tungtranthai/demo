@@ -6,7 +6,6 @@ import javax.annotation.Generated
 
 @SpringBootApplication
 class Application {
-
   companion object {
     @Generated
     @JvmStatic
